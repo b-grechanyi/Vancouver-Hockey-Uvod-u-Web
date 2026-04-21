@@ -211,6 +211,11 @@ nav {
     border-radius: var(--border-radius);
 }
 
+.team-page h1 {
+    text-align: center;
+}
+
+
 .team-page p{
     color: white;
 }

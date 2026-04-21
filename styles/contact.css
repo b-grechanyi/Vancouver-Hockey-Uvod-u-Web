@@ -30,8 +30,6 @@ to update — change one value, it updates everywhere.
 }
 
 
-
-
 /* ─── Reset ────────────────────────────────────────────────
     Browsers add default margin/padding to elements like h2, h3,
     body. This wipes that so YOU control spacing, not the browser. */
@@ -188,7 +186,7 @@ nav {
     }
 
     aside{
-       display: none;
+        display: none;
     }
 
 }
@@ -214,6 +212,11 @@ nav {
     border-color: var(--color-team-border);
     border-radius: var(--border-radius);
 }
+
+.team-page h1 {
+    text-align: center;
+}
+
 
 .team-page p{
     color: white;

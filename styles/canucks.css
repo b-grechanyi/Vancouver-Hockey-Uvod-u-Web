@@ -220,6 +220,10 @@ nav {
     color: white;
 }
 
+.team-page h1 {
+    text-align: center;
+}
+
 .team-page img {
     width: 14rem;
     height: auto;
