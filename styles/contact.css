@@ -16,9 +16,8 @@ to update — change one value, it updates everywhere.
     --color-team-border: rgb(182, 170, 170);
     --color-body-bg:     #ffffff;
 
-    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --font-logo: 'Courier New', Courier, monospace;
+    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', "Geneva", "Verdana", "sans-serif";
+    --font-logo: 'Courier New', "Courier", "monospace";
 
     --spacing-xs:  0.25rem;
     --spacing-sm:  0.5rem;
@@ -27,7 +26,7 @@ to update — change one value, it updates everywhere.
     --spacing-xl:  2rem;
 
     --border-radius: 4px;
-    --transition:    0.2s ease;
+
 }
 
 
@@ -48,13 +47,6 @@ to update — change one value, it updates everywhere.
     position: absolute;
     top: -100%;                  /* hidden off-screen */
     left: var(--spacing-md);
-    background: var(--color-header-bg);
-    color: var(--color-nav-hover);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    z-index: 999;
-    transition: top var(--transition);
 }
 .skip-link:focus {
   top: var(--spacing-sm);      /* slides into view when tabbed to */

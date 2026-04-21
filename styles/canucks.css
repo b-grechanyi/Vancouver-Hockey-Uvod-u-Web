@@ -20,8 +20,8 @@ to update — change one value, it updates everywhere.
     --color-team-text:   #0a0a0a;
 
 
-    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --font-logo: 'Courier New', Courier, monospace;
+    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', "Geneva", "Verdana", "sans-serif";
+    --font-logo: 'Courier New', "Courier", "monospace";
 
     --spacing-xs:  0.25rem;
     --spacing-sm:  0.5rem;
@@ -51,7 +51,7 @@ to update — change one value, it updates everywhere.
 .skip-link {
     position: absolute;
     top: -100%;                  /* hidden off-screen */
-    z-index: 999;
+    left: var(--spacing-md);
 }
 .skip-link:focus {
   top: var(--spacing-sm);      /* slides into view when tabbed to */

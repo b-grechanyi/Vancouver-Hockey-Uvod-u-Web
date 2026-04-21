@@ -16,8 +16,8 @@ CSS TOKENS
     --color-team-border: #051c2c;
     --color-team-text:   #e3f0e3;
 
-    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --font-logo: 'Courier New', Courier, monospace;
+    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', "Geneva", "Verdana", "sans-serif";
+    --font-logo: 'Courier New', "Courier", "monospace";
 
     --spacing-xs:  0.25rem;
     --spacing-sm:  0.5rem;
@@ -47,13 +47,6 @@ CSS TOKENS
     position: absolute;
     top: -100%;                  /* hidden off-screen */
     left: var(--spacing-md);
-    background: var(--color-header-bg);
-    color: var(--color-nav-hover);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    z-index: 999;
-    transition: top var(--transition);
 }
 .skip-link:focus {
   top: var(--spacing-sm);      /* slides into view when tabbed to */

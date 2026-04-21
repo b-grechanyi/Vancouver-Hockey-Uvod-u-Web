@@ -19,8 +19,8 @@ to update — change one value, it updates everywhere.
     --color-team-border: #af6c45;
     --color-team-text:   #e8e6d7;
 
-    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --font-logo: 'Courier New', Courier, monospace;
+    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', "Geneva", "Verdana", "sans-serif";
+    --font-logo: 'Courier New', "Courier", "monospace";
 
     --spacing-xs:  0.25rem;
     --spacing-sm:  0.5rem;
@@ -50,18 +50,10 @@ to update — change one value, it updates everywhere.
     position: absolute;
     top: -100%;                  /* hidden off-screen */
     left: var(--spacing-md);
-    background: var(--color-header-bg);
-    color: var(--color-nav-hover);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    z-index: 999;
-    transition: top var(--transition);
 }
 .skip-link:focus {
   top: var(--spacing-sm);      /* slides into view when tabbed to */
 }
-
 
 /* ─── Body ─────────────────────────────────────────────────
     min-height ensures the page fills the screen even with little content.
