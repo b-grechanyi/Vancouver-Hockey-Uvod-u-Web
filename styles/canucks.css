@@ -279,6 +279,7 @@ without flex or grid. */
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: var(--spacing-md);
