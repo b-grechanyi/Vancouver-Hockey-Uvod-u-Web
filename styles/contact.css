@@ -1,0 +1,302 @@
+/* ═══════════════════════════════════════════════════════════
+1. CSS TOKENS (variables)
+Required by the project spec. Define all colours, fonts and
+spacing ONCE here so every page stays consistent and easy
+to update — change one value, it updates everywhere.
+   ═══════════════════════════════════════════════════════════ */
+:root {
+    --color-header-bg:   #1a1a2e;
+    --color-footer-bg:   #1a1a2e;
+    --color-footer-text: #aaaaaa;
+    --color-nav-text:    #cccccc;
+    --color-nav-hover:   #ffffff;
+    --color-nav-border:  #2a2a3e;
+    --color-aside-bg:    rgb(240, 238, 238);
+    --color-team-bg:     gainsboro;
+    --color-team-border: rgb(182, 170, 170);
+    --color-body-bg:     #ffffff;
+
+    --font-base: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-logo: 'Courier New', Courier, monospace;
+
+    --spacing-xs:  0.25rem;
+    --spacing-sm:  0.5rem;
+    --spacing-md:  1rem;
+    --spacing-lg:  1.5rem;
+    --spacing-xl:  2rem;
+
+    --border-radius: 4px;
+    --transition:    0.2s ease;
+}
+
+
+
+
+/* ─── Reset ────────────────────────────────────────────────
+    Browsers add default margin/padding to elements like h2, h3,
+    body. This wipes that so YOU control spacing, not the browser. */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Skip link ----- */
+
+.skip-link {
+    position: absolute;
+    top: -100%;                  /* hidden off-screen */
+    left: var(--spacing-md);
+    background: var(--color-header-bg);
+    color: var(--color-nav-hover);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    z-index: 999;
+    transition: top var(--transition);
+}
+.skip-link:focus {
+  top: var(--spacing-sm);      /* slides into view when tabbed to */
+}
+
+
+/* ─── Body ─────────────────────────────────────────────────
+    min-height ensures the page fills the screen even with little content.
+   A neutral off-white looks more professional than aquamarine. */
+body {
+    background-color: var(--color-body-bg);
+    min-height: 100vh;
+    font-family: var(--font-base);
+    color: #1a1a1a;
+    line-height: 1.6;}
+
+/* ─── Header ────────────────────────────────────────────────
+   Dark background works better with white text in navbars. */
+/* ─── Header bar ──────────────────────────────────────────── */
+.header_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-md);
+    position: relative; /* needed so the dropdown nav positions against the header */
+    background-color: var(--color-header-bg);
+}
+
+marquee{
+    background-color: gainsboro;
+}
+
+/* ─── Logo ────────────────────────────────────────────────── */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+}
+
+.logo img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.logo h2 {
+    color: var(--color-nav-hover);
+    font-size: 1.1rem;
+    white-space: nowrap;
+    font-family: var(--font-logo);
+}
+
+/* ─── Nav — desktop default ───────────────────────────────── */
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    gap: var(--spacing-md);
+    min-width: 0;
+}
+
+.nav_link {
+    color: var(--color-nav-text);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.95rem;
+}
+
+.nav_link:hover {
+    color: var(--color-nav-hover);
+}
+
+/* Active nav item — tells the user which page they are on.
+    Required by the project spec. Each page adds class="active"
+    to its own link in the HTML. */
+.nav_link.active {
+    color: var(--color-nav-hover);
+    border-bottom: 2px solid var(--color-nav-hover);
+}
+
+/* Visible focus ring — accessibility requirement.
+   Without this, keyboard users can't see where they are. */
+.nav_link:focus-visible {
+    outline: 2px solid var(--color-nav-hover);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+#nav-toggle{
+    display: none;
+}
+
+.menu {
+    color: var(--color-nav-text);
+    cursor: pointer;
+    user-select: none; /* prevents text highlighting on click */
+}
+
+
+/* ─── Mobile (max 767px) ──────────────────────────────────── */
+@media (max-width: 767px) {
+
+    nav {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-header-bg);
+        z-index: 10; 
+
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+        /* When checkbox is checked — slide nav down into view */
+    .nav-toggle:checked ~ nav {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+
+    /* Style links nicely in the dropdown */
+    .nav_link {
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-bottom: 1px solid var(--color-nav-border);
+        width: 100%;
+        display: block;
+    }
+
+    .nav_link:hover {
+    background-color: var(--color-nav-border);
+    }
+
+    aside{
+       display: none;
+    }
+
+}
+
+/* ─── Page body ─────────────────────────────────────────────
+   Mobile-first: single column stack by default. */
+.page_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: var(--spacing-md);
+}
+
+.team-page{
+    background-color: var(--color-team-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md);
+    margin: var(--spacing-sm);
+    border-style: inset;
+    border-width: 0.3rem;
+    border-color: var(--color-team-border);
+    border-radius: var(--border-radius);
+}
+
+.team-page p{
+    color: white;
+}
+
+.team-page img {
+    width: 14rem;
+    height: auto;
+    padding: var(--spacing-xs);
+}
+
+/* ─── Main content grid ─────────────────────────────────────
+   Mobile: one column. Widens in the media query below. */
+.actual-content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.actual-content-container h2{
+    margin-bottom: 10px;
+}
+
+
+/* ─── Aside ─────────────────────────────────────────────────
+   Toned down from bright 'brown' to a neutral sidebar color. */
+aside {
+    background-color: var(--color-aside-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+}
+
+aside img{
+        border-radius: var(--border-radius);
+        width: 100%;      /* fill the container width */
+        object-fit: cover;
+        
+}
+
+/* ─── Footer ────────────────────────────────────────────────
+display:flex + justify-content is needed for align-items to work.
+Your original had align-items:center alone, which does nothing
+without flex or grid. */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    font-size: 0.85rem;
+}
+
+
+/* ─── Tablet and up (768px+) ────────────────────────────────
+    Merged your two separate @media 768px blocks into one.
+    Two blocks for the same breakpoint is redundant. */
+@media (min-width: 767px) {
+    .page_body {
+        flex-direction: row;
+    }
+
+    .actual-content-container {
+        grid-template-columns: 1fr;
+        flex: 6;
+    }
+
+    aside {
+        width: 200px;
+        flex-shrink: 9;
+    }
+
+
+    .menu{
+        display: none;
+    }
+}

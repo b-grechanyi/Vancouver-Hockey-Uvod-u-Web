@@ -1,0 +1,165 @@
+<!-- HEAD -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/title_logo.png"/>
+
+
+    <title>Contact - Vancouver Hockey</title>
+    <meta name="description" content="Get in touch with Vancouver Hockey. Send a message, suggest content or ask about the site.">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact - Vancouver Hockey">
+    <meta property="og:description" content="Get in touch with Vancouver Hockey. Send a message, suggest content or ask about the site.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/title_logo.png"> 
+
+    <link href="/styles/contact.css" rel="stylesheet">
+
+</head>
+
+<!-- BODY -->
+
+<body>
+
+<a href="#page_body" class="skip-link">Skip to main content</a>
+
+<header>
+    <div class="header_bar">
+
+        <div class="logo">
+            <a href="../index.html"> <img src="/assets/title_logo.png" width="100" alt="Vancouver Hockey Logo"> </a>
+            <h2>Vancouver Hockey</h2>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <nav aria-label="Main navigation">
+            <a href="../index.html"   class="nav_link">Home</a>
+            <a href="canucks.html"    class="nav_link">Canucks</a>
+            <a href="goldeneyes.html" class="nav_link">Goldeneyes</a>
+            <a href="abbotsford.html" class="nav_link">Abbotsford</a>
+            <a href="contact.html"    class="nav_link active" aria-current="page">Contact</a>
+        </nav>
+        
+        <label for="nav-toggle" class="menu" aria-label="Open navigation menu">
+            <h3>Menu</h3>
+        </label>
+        
+    </div>
+<marquee>As of 20/04, the Canucks, the Goldeneyes and the Abbotsford Canucks all have been eliminated from Playoff Contention in their respective leagues. Sad times for Vancouver Hockey.</marquee>
+
+
+</header>
+
+<div class="team-page">
+    <h1>
+        Contact us
+    </h1>
+</div>
+
+<div class="page_body">
+    <main class="actual-content-container" id="page_body">
+
+    <section>
+
+    <h2>Send a message</h2>
+
+    <form action="#" method="post" validate>
+
+    <fieldset>
+    <legend><b>Your details</b></legend>
+
+    <div class="form-group">
+
+        <label for="full-name">
+            Name <span class="required-mark" aria-hidden="true">*</span>
+        </label>
+
+        <input type="text" id="full-name" name="full-name" placeholder="e.g. John Doe" required autocomplete="name">
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="email">
+
+            Email address <span class="required-mark" aria-hidden="true">*</span>
+
+        </label>
+
+        <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required autocomplete="email">
+
+    </div>
+
+    </fieldset>
+
+    <fieldset>
+
+    <legend><b>Your message</b></legend>
+
+        <div class="form-group">
+
+        <label for="subject">
+
+            Subject <span class="required-mark" aria-hidden="true">*</span>
+
+        </label>
+
+
+                <select id="subject" name="subject" required>
+
+                    <option value="">— Please choose —</option>
+
+                    <option value="general">General question</option>
+
+                    <option value="canucks">About the Canucks</option>
+
+                    <option value="goldeneyes">About the Goldeneyes</option>
+
+                    <option value="abbotsford">About Abbotsford</option>
+
+                    <option value="suggestion">Content suggestion</option>
+
+                    <option value="other">Other</option>
+
+                </select>
+
+        </div>
+
+    <div class="form-group">
+        <label for="message">
+            Message <span class="required-mark" aria-hidden="true">*</span>
+        </label>
+            <textarea id="message" name="message" placeholder="Write your message here..."required></textarea>
+    </div>
+
+        </fieldset>
+
+        <p><span class="required-mark">*</span> Required fields</p>
+
+    <button type="submit" class="btn-submit">Send message</button>
+
+</form>
+
+</section>
+        
+    </main>
+
+    <aside aria-label="Team info">
+        <img src="/assets/vancouver_map_side_a.png" alt="Black and White map of Vancouver">
+    </aside>
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+    <p>Made with love by Berko Grechanyi </p>
+</footer>
+
+</body>
+</html>
