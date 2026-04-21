@@ -23,7 +23,7 @@ It is a static website built with HTML and CSS only. It's a project for Uvod u W
   - visible focus states
   - `alt` text for images
 - Basic SEO:
-  - unique page titles
+  - page titles
   - meta descriptions
   - Open Graph tags
 
