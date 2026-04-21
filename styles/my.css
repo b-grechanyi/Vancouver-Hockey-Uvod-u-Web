@@ -1,8 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
 1. CSS TOKENS (variables)
-Required by the project spec. Define all colours, fonts and
-spacing ONCE here so every page stays consistent and easy
-to update — change one value, it updates everywhere.
    ═══════════════════════════════════════════════════════════ */
 :root {
     --color-header-bg:   #1a1a2e;
@@ -33,9 +30,7 @@ to update — change one value, it updates everywhere.
 
 
 
-/* ─── Reset ────────────────────────────────────────────────
-    Browsers add default margin/padding to elements like h2, h3,
-    body. This wipes that so YOU control spacing, not the browser. */
+/* ─── Reset ────────────────────────────────────────────────*/
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -64,8 +59,7 @@ body {
     color: #1a1a1a;
     line-height: 1.6;}
 
-/* ─── Header ────────────────────────────────────────────────
-   Dark background works better with white text in navbars. */
+
 /* ─── Header bar ──────────────────────────────────────────── */
 .header_bar {
     display: flex;
@@ -123,16 +117,11 @@ nav {
     color: var(--color-nav-hover);
 }
 
-/* Active nav item — tells the user which page they are on.
-    Required by the project spec. Each page adds class="active"
-    to its own link in the HTML. */
 .nav_link.active {
     color: var(--color-nav-hover);
     border-bottom: 2px solid var(--color-nav-hover);
 }
 
-/* Visible focus ring — accessibility requirement.
-   Without this, keyboard users can't see where they are. */
 .nav_link:focus-visible {
     outline: 2px solid var(--color-nav-hover);
     outline-offset: 3px;
@@ -146,7 +135,7 @@ nav {
 .menu {
     color: var(--color-nav-text);
     cursor: pointer;
-    user-select: none; /* prevents text highlighting on click */
+    user-select: none; 
 }
 
 
@@ -168,7 +157,7 @@ nav {
     }
 
 
-        /* When checkbox is checked — slide nav down into view */
+    /* When checkbox is checked — slide nav down into view */
     .nav-toggle:checked ~ nav {
         transform: translateY(0);
         opacity: 1;
