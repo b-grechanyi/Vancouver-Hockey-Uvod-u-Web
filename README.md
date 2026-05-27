@@ -28,7 +28,7 @@ It is a static website built with HTML and CSS only. It's a project for Uvod u W
   - Open Graph tags
 
 ## Author
-- Name: Nadiia Grechana
+- Name: Berko Grechanyi
 - Study program: Informacijske Tehnologije
 - University: University of Zadar
 - Course: Uvod u Web
