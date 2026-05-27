@@ -206,7 +206,7 @@ nav {
 }
 
 .team-page p{
-    color: white;
+    color: var(--color-team-text, white);
     text-align: center;
 }
 
