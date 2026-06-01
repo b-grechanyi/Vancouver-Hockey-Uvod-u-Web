@@ -241,6 +241,11 @@ nav {
     text-decoration: underline;
 }
 
+.favorite-button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 /* ─── Aside ─────────────────────────────────────────────────
    Toned down from bright 'brown' to a neutral sidebar color. */

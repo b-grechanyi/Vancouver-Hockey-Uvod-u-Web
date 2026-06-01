@@ -1,5 +1,14 @@
 import { playersByTeam } from "./players.js";
-import { state, setTeam, setFilter, setQuery } from "./state.js";
+import {
+    state,
+    setTeam,
+    setFilter,
+    setQuery,
+    setFavorites,
+    addFavorite,
+    removeFavorite,
+    isFavorite
+} from "./state.js";
 import { renderPlayerCards, renderRosterCards } from "./ui.js";
 
 const playerCardsContainer = document.querySelector("#player-cards");
@@ -92,6 +101,19 @@ function updateRosterDisplay() {
     updateActiveFilterButton();
 }
 
+function loadFavorites() {
+    const savedFavorites = localStorage.getItem("favoritePlayers");
+
+    if (savedFavorites) {
+        setFavorites(JSON.parse(savedFavorites));
+    }
+}
+
+function saveFavorites() {
+    localStorage.setItem("favoritePlayers", JSON.stringify(state.favorites));
+}
+
+
 function initPlayerCards() {
     if (!playerCardsContainer) {
         return;
@@ -149,8 +171,33 @@ function initBrowserNavigation() {
     });
 }
 
+function initFavoriteButtons() {
+    if (!rosterCardsContainer) {
+        return;
+    }
+
+    rosterCardsContainer.addEventListener("click", (event) => {
+        if (!event.target.classList.contains("favorite-button")) {
+            return;
+        }
+
+        const playerName = event.target.dataset.playerName;
+
+        if (isFavorite(playerName)) {
+            removeFavorite(playerName);
+        } else {
+            addFavorite(playerName);
+        }
+
+        saveFavorites();
+        updateRosterDisplay();
+    });
+}
+
+loadFavorites();
 initPlayerCards();
 initRosterCards();
 initRosterFilters();
-initBrowserNavigation();
 initRosterSearch();
+initFavoriteButtons();
+initBrowserNavigation();

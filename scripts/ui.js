@@ -1,3 +1,5 @@
+import { isFavorite } from "./state.js";
+
 function createParagraph(text, isBold = false) {
     const paragraph = document.createElement("p");
 
@@ -74,11 +76,24 @@ export function createRosterCard(player) {
     const stat = document.createElement("p");
     stat.textContent = player.stat;
 
+    const favoriteButton = document.createElement("button");
+    favoriteButton.type = "button";
+    favoriteButton.classList.add("favorite-button");
+    favoriteButton.dataset.playerName = player.name;
+
+    if (isFavorite(player.name)) {
+        favoriteButton.textContent = "Remove favorite";
+        favoriteButton.classList.add("active");
+    } else {
+        favoriteButton.textContent = "Add favorite";
+    }
+
     card.appendChild(image);
     card.appendChild(name);
     card.appendChild(number);
     card.appendChild(position);
     card.appendChild(stat);
+    card.appendChild(favoriteButton);
 
     return card;
 }
@@ -98,3 +113,4 @@ export function renderRosterCards(container, players) {
         container.appendChild(card);
     });
 }
+
