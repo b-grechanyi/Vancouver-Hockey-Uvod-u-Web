@@ -2,6 +2,7 @@ export const playersByTeam = {
     home: [
         {
             name: "Brock Boeser",
+            position: "forward",
             season: "2025-26 Season:",
             stat: "48 Points",
             details: "(22 G / 26 A)",
@@ -10,6 +11,7 @@ export const playersByTeam = {
         },
         {
             name: "Kristen Campbell",
+            position: "goalie",
             season: "2025-26 Season:",
             stat: "SV% .915",
             details: "(GAA 2.09)",
@@ -18,6 +20,7 @@ export const playersByTeam = {
         },
         {
             name: "Ben Berard",
+            position: "forward",
             season: "2025-26 Season:",
             stat: "37 Points",
             details: "(20 G / 17 A)",
@@ -26,6 +29,7 @@ export const playersByTeam = {
         },
         {
             name: "Kevin Lankinen",
+            position: "goalie",
             season: "2025-26 Season:",
             stat: "SV% .875",
             details: "(GAA 3.70)",
@@ -34,6 +38,7 @@ export const playersByTeam = {
         },
         {
             name: "Jake DeBrusk",
+            position: "forward",
             season: "2025-26 Season:",
             stat: "42 Points",
             details: "(23 G / 19 A)",
@@ -41,9 +46,11 @@ export const playersByTeam = {
             alt: "Jake DeBrusk profile photo"
         }
     ],
+
     canucks: [
         {
             name: "Elias Petterson",
+            position: "forward",
             tagline: "Highest Scorer",
             season: "2025-26 Season:",
             stat: "51 Points",
@@ -53,6 +60,7 @@ export const playersByTeam = {
         },
         {
             name: "Thatcher Demko",
+            position: "goalie",
             tagline: "Highest Save %",
             season: "2025-26 Season:",
             stat: ".897 SV%",
@@ -62,6 +70,7 @@ export const playersByTeam = {
         },
         {
             name: "Filip Hronek",
+            position: "defense",
             tagline: "Best Defenceman",
             season: "2025-26 Season:",
             stat: "49 Points",
@@ -71,6 +80,7 @@ export const playersByTeam = {
         },
         {
             name: "Jake DeBrusk",
+            position: "forward",
             tagline: "All-Rounder",
             season: "2025-26 Season:",
             stat: "42 Points",
@@ -79,9 +89,11 @@ export const playersByTeam = {
             alt: "Jake DeBrusk profile photo"
         }
     ],
+
     goldeneyes: [
         {
             name: "Sarah Nurse",
+            position: "forward",
             tagline: "Highest Scorer",
             season: "2025-26 Season:",
             stat: "13 Points",
@@ -91,6 +103,7 @@ export const playersByTeam = {
         },
         {
             name: "Kristen Campbell",
+            position: "goalie",
             tagline: "Highest Save %",
             season: "2025-26 Season:",
             stat: "SV% .915",
@@ -100,6 +113,7 @@ export const playersByTeam = {
         },
         {
             name: "Jenn Gardiner",
+            position: "forward",
             tagline: "Most Goals",
             season: "2025-26 Season:",
             stat: "16 Points",
@@ -109,6 +123,7 @@ export const playersByTeam = {
         },
         {
             name: "Hannah Miller",
+            position: "forward",
             tagline: "All-Rounder",
             season: "2025-26 Season:",
             stat: "16 Points",
@@ -117,9 +132,11 @@ export const playersByTeam = {
             alt: "Hannah Miller profile photo"
         }
     ],
+
     abbotsford: [
         {
             name: "Nils Aman",
+            position: "forward",
             tagline: "Highest Scorer",
             season: "2025-26 Season:",
             stat: "41 Points",
@@ -129,6 +146,7 @@ export const playersByTeam = {
         },
         {
             name: "Jiri Patera",
+            position: "goalie",
             tagline: "Highest Save %",
             season: "2025-26 Season:",
             stat: "SV% .910",
@@ -138,6 +156,7 @@ export const playersByTeam = {
         },
         {
             name: "Ben Berard",
+            position: "forward",
             season: "2025-26 Season:",
             stat: "37 Points",
             details: "(20 G / 17 A)",
@@ -146,6 +165,7 @@ export const playersByTeam = {
         },
         {
             name: "Vilmer Alriksson",
+            position: "forward",
             tagline: "All-Rounder",
             season: "2025-26 Season:",
             stat: "36 Points",
