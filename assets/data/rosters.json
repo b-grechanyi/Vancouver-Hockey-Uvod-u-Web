@@ -111,7 +111,7 @@
             "position": "forward",
             "number": 13,
             "stat": "14 Points",
-            "image": "../assets/goldeneyes_profiles/vanisova.png",
+            "image": "../assets/goldeneyes_profiles/vanisova.jpg",
             "alt": "Tereza Vanisova profile photo"
         },
         {
@@ -119,7 +119,7 @@
             "position": "forward",
             "number": 33,
             "stat": "12 Points",
-            "image": "../assets/goldeneyes_profiles/karvinen.png",
+            "image": "../assets/goldeneyes_profiles/karvinen.jpg",
             "alt": "Michelle Karvinen profile photo"
         },
         {
@@ -127,7 +127,7 @@
             "position": "defense",
             "number": 16,
             "stat": "10 Points",
-            "image": "../assets/goldeneyes_profiles/jaques.png",
+            "image": "../assets/goldeneyes_profiles/jaques.jpg",
             "alt": "Sophie Jaques profile photo"
         },
         {
@@ -135,7 +135,7 @@
             "position": "defense",
             "number": 42,
             "stat": "8 Points",
-            "image": "../assets/goldeneyes_profiles/thompson.png",
+            "image": "../assets/goldeneyes_profiles/thompson.jpg",
             "alt": "Claire Thompson profile photo"
         },
         {
@@ -143,7 +143,7 @@
             "position": "defense",
             "number": 21,
             "stat": "7 Points",
-            "image": "../assets/goldeneyes_profiles/bell.png",
+            "image": "../assets/goldeneyes_profiles/bell.jpg",
             "alt": "Ashton Bell profile photo"
         },
         {
@@ -159,7 +159,7 @@
             "position": "goalie",
             "number": 38,
             "stat": "SV% .901",
-            "image": "../assets/goldeneyes_profiles/maschmeyer.png",
+            "image": "../assets/goldeneyes_profiles/maschmeyer.jpg",
             "alt": "Emerance Maschmeyer profile photo"
         }
     ],
@@ -193,7 +193,7 @@
             "position": "forward",
             "number": 9,
             "stat": "28 Points",
-            "image": "../assets/abbotsford_profiles/klimovich.png",
+            "image": "../assets/abbotsford_profiles/klimovich.jpg",
             "alt": "Danila Klimovich profile photo"
         },
         {
@@ -201,7 +201,7 @@
             "position": "forward",
             "number": 21,
             "stat": "24 Points",
-            "image": "../assets/abbotsford_profiles/wouters.png",
+            "image": "../assets/abbotsford_profiles/wouters.jpg",
             "alt": "Chase Wouters profile photo"
         },
         {
@@ -209,7 +209,7 @@
             "position": "defense",
             "number": 59,
             "stat": "23 Points",
-            "image": "../assets/abbotsford_profiles/kudryavtsev.png",
+            "image": "../assets/abbotsford_profiles/kudryavtsev.jpg",
             "alt": "Kirill Kudryavtsev profile photo"
         },
         {
@@ -217,7 +217,7 @@
             "position": "defense",
             "number": 25,
             "stat": "18 Points",
-            "image": "../assets/abbotsford_profiles/willander.png",
+            "image": "../assets/canucks_profiles/willander.png",
             "alt": "Tom Willander profile photo"
         },
         {
@@ -225,7 +225,7 @@
             "position": "defense",
             "number": 3,
             "stat": "15 Points",
-            "image": "../assets/abbotsford_profiles/arntsen.png",
+            "image": "../assets/abbotsford_profiles/arntsen.jpg",
             "alt": "Joe Arntsen profile photo"
         },
         {
