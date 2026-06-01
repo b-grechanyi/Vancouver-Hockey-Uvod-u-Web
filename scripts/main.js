@@ -41,7 +41,7 @@ function getFilterFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const position = params.get("position");
 
-    if (position === "forward" || position === "defense" || position === "goalie") {
+    if (position === "forward" || position === "defense" || position === "goalie" || position === "favorite") {
         return position;
     }
 
@@ -63,7 +63,7 @@ function updateUrlFilter(filter) {
 function getFilteredRoster() {
     return currentRoster.filter((player) => {
         const matchesPosition =
-            state.filter === "all" || player.position === state.filter;
+            state.filter === "all" || player.position === state.filter || (state.filter === "favorite" && isFavorite(player.name));
 
         const matchesSearch = player.name
             .toLowerCase()
