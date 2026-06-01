@@ -3,6 +3,11 @@ import { isFavorite } from "./state.js";
 const FAVORITE_ICON = "../assets/icons/star_picked.png";
 const NOT_FAVORITE_ICON = "../assets/icons/star-off.png";
 
+function capitalizeFirstLetter(text) {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+
 function createParagraph(text, isBold = false) {
     const paragraph = document.createElement("p");
 
@@ -74,7 +79,7 @@ export function createRosterCard(player) {
     number.textContent = `#${player.number}`;
 
     const position = document.createElement("p");
-    position.textContent = player.position;
+    position.textContent = capitalizeFirstLetter(player.position);
 
     const stat = document.createElement("p");
     stat.textContent = player.stat;
