@@ -10,3 +10,13 @@ aside img {
     height: auto;
     object-fit: cover;
 }
+
+.error-message {
+    color: darkred;
+    font-weight: bold;
+}
+
+.success-message {
+    color: darkgreen;
+    font-weight: bold;
+}

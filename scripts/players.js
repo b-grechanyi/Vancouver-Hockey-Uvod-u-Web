@@ -33,7 +33,7 @@ export const playersByTeam = {
             season: "2025-26 Season:",
             stat: "SV% .875",
             details: "(GAA 3.70)",
-            image: "assets/canucks_profiles/lenkinnen.png",
+            image: "assets/canucks_profiles/lankinen.png",
             alt: "Kevin Lankinen profile photo"
         },
         {
