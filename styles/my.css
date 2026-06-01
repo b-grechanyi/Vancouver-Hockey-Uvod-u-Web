@@ -246,6 +246,40 @@ nav {
     text-decoration: underline;
 }
 
+#roster-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.roster-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: var(--spacing-md);
+    margin-top: 0.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.roster-card img {
+    border-radius: 50%;
+    width: var(--profile-size);
+    height: var(--profile-size);
+    object-fit: cover;
+    background-color: var(--player-pfp-background);
+}
+
+.roster-card h3 {
+    font-size: 1rem;
+    margin-top: var(--spacing-sm);
+}
+
+.roster-card p {
+    margin: 0;
+}
+
 
 /* ─── Aside ─────────────────────────────────────────────────
    Toned down from bright 'brown' to a neutral sidebar color. */
@@ -313,5 +347,9 @@ footer {
 
     .menu{
         display: none;
+    }
+
+    #roster-cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
