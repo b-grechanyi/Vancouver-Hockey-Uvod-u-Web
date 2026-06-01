@@ -1,3 +1,8 @@
+import { setTeam, state } from "./state.js";
+import { renderPlayerCards } from "./ui.js";
+
+const playerCardsContainer = document.querySelector("#player-cards");
+
 export const playersByTeam = {
     home: [
         {
@@ -175,3 +180,18 @@ export const playersByTeam = {
         }
     ]
 };
+
+function getCurrentPlayers() {
+    return playersByTeam[state.team] || [];
+}
+
+export function initPlayerCards() {
+    if (!playerCardsContainer) {
+        return;
+    }
+
+    const team = playerCardsContainer.dataset.team;
+    setTeam(team);
+
+    renderPlayerCards(playerCardsContainer, getCurrentPlayers());
+}
