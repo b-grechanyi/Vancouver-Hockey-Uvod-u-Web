@@ -236,6 +236,19 @@ nav {
 /* ─── JavaScript related stuff ─────────────────────────────────────
    Rosters, buttons, anything for the second part of the task goes here */
 
+
+.roster-controls button{
+    background-color: var(--color-team-border);
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: var(--color-header-bg);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    color: var(--color-aside-bg);
+    border: none;
+}
+
+
 .roster-filter.active {
     font-weight: bold;
     text-decoration: underline;
@@ -248,7 +261,7 @@ nav {
 
 #roster-cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
     gap: var(--spacing-md);
 }
 
