@@ -119,7 +119,7 @@ export function renderRosterCards(container, players) {
 
     if (players.length === 0) {
         const message = document.createElement("p");
-        message.textContent = "No roster players found.";
+        message.textContent = "No favorite players added yet.";
         container.appendChild(message);
         return;
     }
