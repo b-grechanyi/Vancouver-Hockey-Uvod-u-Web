@@ -235,14 +235,6 @@
             "stat": "SV% .910",
             "image": "../assets/abbotsford_profiles/patera.png",
             "alt": "Jiri Patera profile photo"
-        },
-        {
-            "name": "Aku Koskenvuo",
-            "position": "goalie",
-            "number": 36,
-            "stat": "SV% .905",
-            "image": "../assets/abbotsford_profiles/koskenvuo.png",
-            "alt": "Aku Koskenvuo profile photo"
         }
     ]
 }
