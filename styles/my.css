@@ -233,6 +233,14 @@ nav {
     object-fit: cover; 
 }
 
+/* ─── JavaScript related stuff ─────────────────────────────────────
+   Rosters, buttons, anything for the second part of the task goes here */
+
+.roster-filter.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 /* ─── Aside ─────────────────────────────────────────────────
    Toned down from bright 'brown' to a neutral sidebar color. */

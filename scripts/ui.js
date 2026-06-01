@@ -53,3 +53,48 @@ export function renderPlayerCards(container, players) {
         container.appendChild(card);
     });
 }
+
+export function createRosterCard(player) {
+    const card = document.createElement("section");
+    card.classList.add("roster-card");
+
+    const image = document.createElement("img");
+    image.src = player.image;
+    image.alt = player.alt;
+
+    const name = document.createElement("h3");
+    name.textContent = player.name;
+
+    const number = document.createElement("p");
+    number.textContent = `#${player.number}`;
+
+    const position = document.createElement("p");
+    position.textContent = player.position;
+
+    const stat = document.createElement("p");
+    stat.textContent = player.stat;
+
+    card.appendChild(image);
+    card.appendChild(name);
+    card.appendChild(number);
+    card.appendChild(position);
+    card.appendChild(stat);
+
+    return card;
+}
+
+export function renderRosterCards(container, players) {
+    container.innerHTML = "";
+
+    if (players.length === 0) {
+        const message = document.createElement("p");
+        message.textContent = "No roster players found.";
+        container.appendChild(message);
+        return;
+    }
+
+    players.forEach((player) => {
+        const card = createRosterCard(player);
+        container.appendChild(card);
+    });
+}

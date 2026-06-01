@@ -55,7 +55,7 @@ export const playersByTeam = {
             season: "2025-26 Season:",
             stat: "51 Points",
             details: "(15 G / 36 A)",
-            image: "../assets/canucks_profiles/petterson.png",
+            image: "../assets/canucks_profiles/pettersson.png",
             alt: "Elias Petterson profile photo"
         },
         {
