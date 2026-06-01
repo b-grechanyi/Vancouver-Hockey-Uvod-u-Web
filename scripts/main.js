@@ -177,11 +177,13 @@ function initFavoriteButtons() {
     }
 
     rosterCardsContainer.addEventListener("click", (event) => {
-        if (!event.target.classList.contains("favorite-button")) {
+        const favoriteButton = event.target.closest(".favorite-button");
+
+        if (!favoriteButton) {
             return;
         }
 
-        const playerName = event.target.dataset.playerName;
+        const playerName = favoriteButton.dataset.playerName;
 
         if (isFavorite(playerName)) {
             removeFavorite(playerName);

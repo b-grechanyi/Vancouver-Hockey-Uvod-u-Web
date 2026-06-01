@@ -1,5 +1,8 @@
 import { isFavorite } from "./state.js";
 
+const FAVORITE_ICON = "../assets/icons/star_picked.png";
+const NOT_FAVORITE_ICON = "../assets/icons/star-off.png";
+
 function createParagraph(text, isBold = false) {
     const paragraph = document.createElement("p");
 
@@ -81,12 +84,20 @@ export function createRosterCard(player) {
     favoriteButton.classList.add("favorite-button");
     favoriteButton.dataset.playerName = player.name;
 
+    const favoriteIcon = document.createElement("img");
+    favoriteIcon.classList.add("favorite-icon");
+    favoriteIcon.alt = "";
+
     if (isFavorite(player.name)) {
-        favoriteButton.textContent = "Remove favorite";
         favoriteButton.classList.add("active");
+        favoriteButton.setAttribute("aria-label", `Remove ${player.name} from favourites`);
+        favoriteIcon.src = FAVORITE_ICON;
     } else {
-        favoriteButton.textContent = "Add favorite";
+        favoriteButton.setAttribute("aria-label", `Add ${player.name} to favourites`);
+        favoriteIcon.src = NOT_FAVORITE_ICON;
     }
+
+    favoriteButton.appendChild(favoriteIcon);
 
     card.appendChild(image);
     card.appendChild(name);

@@ -254,11 +254,6 @@ nav {
     text-decoration: underline;
 }
 
-.favorite-button.active {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 #roster-cards {
     display: grid;
     grid-template-columns: 2fr;
@@ -277,7 +272,7 @@ nav {
     text-align: center;
 }
 
-.roster-card img {
+.roster-card > img {
     border-radius: 50%;
     width: var(--profile-size);
     height: var(--profile-size);
@@ -292,6 +287,19 @@ nav {
 
 .roster-card p {
     margin: 0;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+}
+
+.favorite-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
