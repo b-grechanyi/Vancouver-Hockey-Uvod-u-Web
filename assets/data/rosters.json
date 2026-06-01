@@ -1,0 +1,248 @@
+{
+    "canucks": [
+        {
+            "name": "Elias Pettersson",
+            "position": "forward",
+            "number": 40,
+            "stat": "51 Points (15G / 36A)",
+            "image": "../assets/canucks_profiles/pettersson.png",
+            "alt": "Elias Pettersson profile photo"
+        },
+        {
+            "name": "Jake DeBrusk",
+            "position": "forward",
+            "number": 74,
+            "stat": "42 Points (23G / 19A)",
+            "image": "../assets/canucks_profiles/debrusk.png",
+            "alt": "Jake DeBrusk profile photo"
+        },
+        {
+            "name": "Brock Boeser",
+            "position": "forward",
+            "number": 6,
+            "stat": "37 Points (18G / 19A)",
+            "image": "../assets/canucks_profiles/boeser.png",
+            "alt": "Brock Boeser profile photo"
+        },
+        {
+            "name": "Evander Kane",
+            "position": "forward",
+            "number": 91,
+            "stat": "31 Points (13G / 18A)",
+            "image": "../assets/canucks_profiles/kane.png",
+            "alt": "Evander Kane profile photo"
+        },
+        {
+            "name": "Nils Hoglander",
+            "position": "forward",
+            "number": 21,
+            "stat": "29 Points (17G / 12A)",
+            "image": "../assets/canucks_profiles/hoglander.png",
+            "alt": "Nils Hoglander profile photo"
+        },
+        {
+            "name": "Filip Hronek",
+            "position": "defense",
+            "number": 17,
+            "stat": "49 Points (8G / 41A)",
+            "image": "../assets/canucks_profiles/hronek.png",
+            "alt": "Filip Hronek profile photo"
+        },
+        {
+            "name": "Quinn Hughes",
+            "position": "defense",
+            "number": 43,
+            "stat": "44 Points (8G / 36A)",
+            "image": "../assets/canucks_profiles/hughes.png",
+            "alt": "Quinn Hughes profile photo"
+        },
+        {
+            "name": "Tom Willander",
+            "position": "defense",
+            "number": 5,
+            "stat": "23 Points (2G / 21A)",
+            "image": "../assets/canucks_profiles/willander.png",
+            "alt": "Tom Willander profile photo"
+        },
+        {
+            "name": "Thatcher Demko",
+            "position": "goalie",
+            "number": 35,
+            "stat": "SV% .897 (2.90 GAA)",
+            "image": "../assets/canucks_profiles/demko.png",
+            "alt": "Thatcher Demko profile photo"
+        },
+        {
+            "name": "Kevin Lankinen",
+            "position": "goalie",
+            "number": 32,
+            "stat": "11 Wins (3.44 GAA)",
+            "image": "../assets/canucks_profiles/lankinen.png",
+            "alt": "Kevin Lankinen profile photo"
+        }
+    ],
+    "goldeneyes": [
+        {
+            "name": "Sarah Nurse",
+            "position": "forward",
+            "number": 20,
+            "stat": "13 Points",
+            "image": "../assets/goldeneyes_profiles/nurse.png",
+            "alt": "Sarah Nurse profile photo"
+        },
+        {
+            "name": "Jenn Gardiner",
+            "position": "forward",
+            "number": 12,
+            "stat": "16 Points",
+            "image": "../assets/goldeneyes_profiles/jenn.png",
+            "alt": "Jenn Gardiner profile photo"
+        },
+        {
+            "name": "Hannah Miller",
+            "position": "forward",
+            "number": 34,
+            "stat": "16 Points",
+            "image": "../assets/goldeneyes_profiles/miller.png",
+            "alt": "Hannah Miller profile photo"
+        },
+        {
+            "name": "Tereza Vanisova",
+            "position": "forward",
+            "number": 13,
+            "stat": "14 Points",
+            "image": "../assets/goldeneyes_profiles/vanisova.png",
+            "alt": "Tereza Vanisova profile photo"
+        },
+        {
+            "name": "Michelle Karvinen",
+            "position": "forward",
+            "number": 33,
+            "stat": "12 Points",
+            "image": "../assets/goldeneyes_profiles/karvinen.png",
+            "alt": "Michelle Karvinen profile photo"
+        },
+        {
+            "name": "Sophie Jaques",
+            "position": "defense",
+            "number": 16,
+            "stat": "10 Points",
+            "image": "../assets/goldeneyes_profiles/jaques.png",
+            "alt": "Sophie Jaques profile photo"
+        },
+        {
+            "name": "Claire Thompson",
+            "position": "defense",
+            "number": 42,
+            "stat": "8 Points",
+            "image": "../assets/goldeneyes_profiles/thompson.png",
+            "alt": "Claire Thompson profile photo"
+        },
+        {
+            "name": "Ashton Bell",
+            "position": "defense",
+            "number": 21,
+            "stat": "7 Points",
+            "image": "../assets/goldeneyes_profiles/bell.png",
+            "alt": "Ashton Bell profile photo"
+        },
+        {
+            "name": "Kristen Campbell",
+            "position": "goalie",
+            "number": 50,
+            "stat": "SV% .915",
+            "image": "../assets/goldeneyes_profiles/soupy.png",
+            "alt": "Kristen Campbell profile photo"
+        },
+        {
+            "name": "Emerance Maschmeyer",
+            "position": "goalie",
+            "number": 38,
+            "stat": "SV% .901",
+            "image": "../assets/goldeneyes_profiles/maschmeyer.png",
+            "alt": "Emerance Maschmeyer profile photo"
+        }
+    ],
+    "abbotsford": [
+        {
+            "name": "Nils Aman",
+            "position": "forward",
+            "number": 88,
+            "stat": "41 Points",
+            "image": "../assets/abbotsford_profiles/aman.png",
+            "alt": "Nils Aman profile photo"
+        },
+        {
+            "name": "Ben Berard",
+            "position": "forward",
+            "number": 34,
+            "stat": "37 Points",
+            "image": "../assets/abbotsford_profiles/berard.png",
+            "alt": "Ben Berard profile photo"
+        },
+        {
+            "name": "Vilmer Alriksson",
+            "position": "forward",
+            "number": 72,
+            "stat": "36 Points",
+            "image": "../assets/abbotsford_profiles/vilmer.png",
+            "alt": "Vilmer Alriksson profile photo"
+        },
+        {
+            "name": "Danila Klimovich",
+            "position": "forward",
+            "number": 9,
+            "stat": "28 Points",
+            "image": "../assets/abbotsford_profiles/klimovich.png",
+            "alt": "Danila Klimovich profile photo"
+        },
+        {
+            "name": "Chase Wouters",
+            "position": "forward",
+            "number": 21,
+            "stat": "24 Points",
+            "image": "../assets/abbotsford_profiles/wouters.png",
+            "alt": "Chase Wouters profile photo"
+        },
+        {
+            "name": "Kirill Kudryavtsev",
+            "position": "defense",
+            "number": 59,
+            "stat": "23 Points",
+            "image": "../assets/abbotsford_profiles/kudryavtsev.png",
+            "alt": "Kirill Kudryavtsev profile photo"
+        },
+        {
+            "name": "Tom Willander",
+            "position": "defense",
+            "number": 25,
+            "stat": "18 Points",
+            "image": "../assets/abbotsford_profiles/willander.png",
+            "alt": "Tom Willander profile photo"
+        },
+        {
+            "name": "Joe Arntsen",
+            "position": "defense",
+            "number": 3,
+            "stat": "15 Points",
+            "image": "../assets/abbotsford_profiles/arntsen.png",
+            "alt": "Joe Arntsen profile photo"
+        },
+        {
+            "name": "Jiri Patera",
+            "position": "goalie",
+            "number": 30,
+            "stat": "SV% .910",
+            "image": "../assets/abbotsford_profiles/patera.png",
+            "alt": "Jiri Patera profile photo"
+        },
+        {
+            "name": "Aku Koskenvuo",
+            "position": "goalie",
+            "number": 36,
+            "stat": "SV% .905",
+            "image": "../assets/abbotsford_profiles/koskenvuo.png",
+            "alt": "Aku Koskenvuo profile photo"
+        }
+    ]
+}
