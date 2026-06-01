@@ -95,6 +95,15 @@
         <section class="roster-section" aria-labelledby="abbotsford-roster-title">
             <h2 id="abbotsford-roster-title">Full Roster</h2>
 
+            <div class="roster-search">
+                <label for="roster-search-input">Search roster</label>
+                <input
+                    type="search"
+                    id="roster-search-input"
+                    placeholder="Search by player name"
+                    autocomplete="off">
+            </div>
+
             <div class="roster-controls" aria-label="Roster filters">
                 <button type="button" class="roster-filter active" data-filter="all"> All </button>
 
@@ -102,7 +111,7 @@
 
                 <button type="button" class="roster-filter" data-filter="defense"> Defense </button>
 
-                <button type="button" class="roster-filter" data-filter="goalie"> Goalies</button>
+                <button type="button" class="roster-filter" data-filter="goalie"> Goalies </button>
             </div>
 
             <div id="roster-cards" data-team="abbotsford"></div>

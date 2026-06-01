@@ -1,10 +1,11 @@
 import { playersByTeam } from "./players.js";
-import { state, setTeam, setFilter } from "./state.js";
+import { state, setTeam, setFilter, setQuery } from "./state.js";
 import { renderPlayerCards, renderRosterCards } from "./ui.js";
 
 const playerCardsContainer = document.querySelector("#player-cards");
 const rosterCardsContainer = document.querySelector("#roster-cards");
 const rosterFilterButtons = document.querySelectorAll(".roster-filter");
+const rosterSearchInput = document.querySelector("#roster-search-input");
 
 let currentRoster = [];
 
@@ -27,13 +28,50 @@ async function loadRosters() {
     return await response.json();
 }
 
-function getFilteredRoster() {
-    if (state.filter === "all") {
-        return currentRoster;
+function getFilterFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    const position = params.get("position");
+
+    if (position === "forward" || position === "defense" || position === "goalie") {
+        return position;
     }
 
+    return "all";
+}
+
+function updateUrlFilter(filter) {
+    const url = new URL(window.location.href);
+
+    if (filter === "all") {
+        url.searchParams.delete("position");
+    } else {
+        url.searchParams.set("position", filter);
+    }
+
+    history.pushState({ filter: filter }, "", url);
+}
+
+function getFilteredRoster() {
     return currentRoster.filter((player) => {
-        return player.position === state.filter;
+        const matchesPosition =
+            state.filter === "all" || player.position === state.filter;
+
+        const matchesSearch = player.name
+            .toLowerCase()
+            .includes(state.query.toLowerCase());
+
+        return matchesPosition && matchesSearch;
+    });
+}
+
+function initRosterSearch() {
+    if (!rosterSearchInput) {
+        return;
+    }
+
+    rosterSearchInput.addEventListener("input", () => {
+        setQuery(rosterSearchInput.value.trim());
+        updateRosterDisplay();
     });
 }
 
@@ -73,6 +111,7 @@ async function initRosterCards() {
 
     const team = rosterCardsContainer.dataset.team;
     setTeam(team);
+    setFilter(getFilterFromUrl());
 
     rosterCardsContainer.textContent = "Loading roster...";
 
@@ -97,11 +136,21 @@ function initRosterFilters() {
             const selectedFilter = button.dataset.filter;
 
             setFilter(selectedFilter);
+            updateUrlFilter(selectedFilter);
             updateRosterDisplay();
         });
+    });
+}
+
+function initBrowserNavigation() {
+    window.addEventListener("popstate", () => {
+        setFilter(getFilterFromUrl());
+        updateRosterDisplay();
     });
 }
 
 initPlayerCards();
 initRosterCards();
 initRosterFilters();
+initBrowserNavigation();
+initRosterSearch();
